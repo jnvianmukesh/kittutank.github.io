@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /* body {
+          background-image: url('https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+          background-repeat: no-repeat;
+          background-size: cover;
+        } */
+        /* #ach-section p:before {
+    content: "●";
+    color: aqua;
+    margin-right: 0.5em;
+  } */
+  </style>
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Saurav Kittu Tank</label>
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=ZhMEVN8eCw4" class="fa fa-linkedin"></a></li>
+
+      <li><a href="#" class="fa fa-instagram"></a></li>
+      <li><a href="#" class="fa fa-facebook"></a></li>
+      <li><a href="#" class="fa fa-youtube"></a></li>
+
+      <li><a href="#" class="fa fa-google"></a></li>
+
+    </ul>
+  </nav>
+  <!-- -----------------------------body--------------------------------- -->
+  <div id="body">
+    <!-- <h1 id="adj">Adjusting padding</h1> -->
+    <div id="ach-section">
+      <h1 id="ach" align="center" style="color: aqua;"> <u>Achievements </u></h1>
+      <p align="justify" style="border-width:1px; border-style:solid; border-color:#333; margin-bottom: 1em;">First Transgender from India to climb unnamed peak at Lahaul Spiti - 6000m on 2nd
+        Oct 2020</p>
+      <p align="justify" style="border-width:1px; border-style:solid; border-color:#333; margin-bottom: 1em;">Climbed to summit Lobuche, 6119 m in Nepal on 28th April 2021 to scale
+      </p>
+      <p align="justify" style="border-width:1px; border-style:solid; border-color:#333; margin-bottom: 1em;">Climbed to 7800m of Mount Everest on 22nd May 2021</p>
+      <p align="justify" style="border-width:1px; border-style:solid; border-color:#333; margin-bottom: 1em;">Have been training from last two years for the expedition to climb Mount Everest Nepal
+      </p>
+    </div>
+    <div id="life-section">
+      <h1 id="life" align="center">My Life Story</h1>
+      <P id="" align="justify">I was living with the family hidden from others, after sometime my family had to disown me , I 
+        started asking Badhai for living but I wanted to achieve something, do something outstanding in my 
+        life , and wanted to contribute for my nation ,l started training and building myself ,then I met Megha 
+        Parmar and Shobhit Nath Sharma, the first women and man from Madhya Pradesh to climb Mount 
+        Everest and Mount Kosciuszko respectively, they guided me and took me under their training ,l have 
+        been training for 8 month now, and have achieved good fitness</P>
+    </div>
+    <div id="goal">
+      
+      <p align="center">My Aim is to become the first transgender of the world to climb 
+        Mount Everest and raise the flag of India with the slogan</p>
+       <p align="justify" style="border-width:1px; border-style:solid; border-color:aqua; margin-bottom: 1em;">Transgender face severe discrimination, stigma and systemic inequality in daily life even in 
+        school and la rounds.</p>
+        
+        <p align="justify" style="border-width:1px; border-style:solid; border-color:aqua; margin-bottom: 1em;">We need to create an equal opportunity for transgender in society
+          </p> 
+        <p align="justify" style="border-width:1px; border-style:solid; border-color:aqua; margin-bottom: 1em;">Spreading awareness-so that under Privileged transgender in our society can live a better life</p>
+        
+    </div>
+  </div>
+
+<!-- -----------------------------slider--------------------------------- -->
+
+<body>
+  <h1 align="center">News and Media</h1>
+  <div class="slider-container" style="margin-bottom: 1em;">
+    <div class="slider">
+      <img src="home minister.PNG" alt="Image 1">
+      <img src="sport minister.PNG" alt="Image 2">
+      <img src="toi interview.PNG" alt="Image 3">
+      <img src="sach.PNG" alt="Image 4">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      var slides = document.getElementsByClassName("slider")[0].getElementsByTagName("img");
+      var i;
+
+      if (n > slides.length) {
+        slideIndex = 1;
+      } else if (n < 1) {
+        slideIndex = slides.length;
+      } else {
+        slideIndex = n;
+      }
+
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+    }
+  </script>
+  <style>
+     .slider-container {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .slider {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+        transition: transform 0.5s ease-in-out;
+        align-items: center;
+      }
+      .slider img {
+        flex: 0 0 auto;
+        width: 100%;
+        height: auto;
+        margin-right: 10px;
+      }
+      .prev,
+      .next {
+        position: absolute;
+        top: 50%;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 1;
+      }
+      .prev {
+        left: 10px;
+      }
+      .next {
+        right: 10px;
+      }
+      .slide-1 .prev {
+        display: none;
+      }
+      .slide-4 .next {
+        display: none;
+      }
+     
+  </style>
+
+
+<!-- -----------------------------------footer------------------------------------------------ -->
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2023 kittumountaineer.com. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      
+  
+    </div>
+  </footer>
+  <style>
+       footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.social-icons {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #666;
+}
+
+  </style>
+</body>
+
+</html>
